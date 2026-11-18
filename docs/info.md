@@ -1,20 +1,11 @@
-<!---
-
-This file is used to generate your project datasheet. Please fill in the information below and delete any unused
-sections.
-
-You can also include images in this folder and reference them in the markdown. Each image must be less than
-512 kb in size, and the combined size of all images must be less than 1 MB.
--->
-
 ## How it works
 
-Explain how your project works
+Three blocks do the work. The score picks which note comes next and how long it lasts. The tempo counts clock ticks to time each note. The tone divides the clock down to the pitch of the note.
 
 ## How to test
 
-Explain how to use your project
+Run it with a 100 kHz clock. Hold rst_n low for a few cycles, then raise it, and the tune plays on uo[0]. Hold ui[0] high to pause.
 
 ## External hardware
 
-List external hardware used in your project (e.g. PMOD, LED display, etc), if any
+A small speaker or buzzer on uo[0], or the Tiny Tapeout audio PMOD on uio[7].
